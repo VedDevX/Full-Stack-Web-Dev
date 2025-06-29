@@ -1,0 +1,168 @@
+/* Reset & Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* Container to fill full height based on content */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* Navbar Styling */
+.navContainer {
+    width: 100%;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+#navList {
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#navLogo {
+    font-size: 2.5rem;
+    color: azure;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #000;
+}
+
+#navItems {
+    display: flex;
+    gap: 40px;
+}
+
+/* Footer Styling */
+.footerBox {
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footerBox p {
+    color: azure;
+    font-size: 1.1rem;
+}
+
+/* Main Content Box */
+.contentBox {
+    width: 80%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Recipe Section */
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.leftBox {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.leftBox h3 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.ingBox,
+.recBox {
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+
+/* Image + Overlay */
+.rightBox {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.rightBox img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.rightBox:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(63, 94, 251, 0.8), rgba(252, 70, 107, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+.overlay span {
+    color: azure;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

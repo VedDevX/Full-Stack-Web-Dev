@@ -1,0 +1,41 @@
+.red-box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+    background-color: red;
+    border-radius: 2px 2px 10px red;
+}
+
+.blue-box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+    background-color: blue;
+    border-radius: 2px 2px 10px blue;
+}
+
+.orange-box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+    padding: 20px;
+    margin: 20px;
+    background-color: orange;
+    border-radius: 2px 2px 10px orange;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
